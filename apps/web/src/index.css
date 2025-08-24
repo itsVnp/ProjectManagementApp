@@ -1,0 +1,68 @@
+@import './styles/globals.css';
+@import './styles/dynamic-classes.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Override Tailwind's hardcoded values with our dynamic ones */
+@layer utilities {
+  /* Ensure our dynamic classes take precedence */
+  .bg-primary-50 { background-color: var(--primary-50) !important; }
+  .bg-primary-100 { background-color: var(--primary-100) !important; }
+  .bg-primary-200 { background-color: var(--primary-200) !important; }
+  .bg-primary-300 { background-color: var(--primary-300) !important; }
+  .bg-primary-400 { background-color: var(--primary-400) !important; }
+  .bg-primary-500 { background-color: var(--primary-500) !important; }
+  .bg-primary-600 { background-color: var(--primary-600) !important; }
+  .bg-primary-700 { background-color: var(--primary-700) !important; }
+  .bg-primary-800 { background-color: var(--primary-800) !important; }
+  .bg-primary-900 { background-color: var(--primary-900) !important; }
+  .bg-primary-950 { background-color: var(--primary-950) !important; }
+  
+  .text-primary-50 { color: var(--primary-50) !important; }
+  .text-primary-100 { color: var(--primary-100) !important; }
+  .text-primary-200 { color: var(--primary-200) !important; }
+  .text-primary-300 { color: var(--primary-300) !important; }
+  .text-primary-400 { color: var(--primary-400) !important; }
+  .text-primary-500 { color: var(--primary-500) !important; }
+  .text-primary-600 { color: var(--primary-600) !important; }
+  .text-primary-700 { color: var(--primary-700) !important; }
+  .text-primary-800 { color: var(--primary-800) !important; }
+  .text-primary-900 { color: var(--primary-900) !important; }
+  .text-primary-950 { color: var(--primary-950) !important; }
+  
+  .border-primary-50 { border-color: var(--primary-50) !important; }
+  .border-primary-100 { border-color: var(--primary-100) !important; }
+  .border-primary-200 { border-color: var(--primary-200) !important; }
+  .border-primary-300 { border-color: var(--primary-300) !important; }
+  .border-primary-400 { border-color: var(--primary-400) !important; }
+  .border-primary-500 { border-color: var(--primary-500) !important; }
+  .border-primary-600 { border-color: var(--primary-600) !important; }
+  .border-primary-700 { border-color: var(--primary-700) !important; }
+  .border-primary-800 { border-color: var(--primary-800) !important; }
+  .border-primary-900 { border-color: var(--primary-900) !important; }
+  .border-primary-950 { border-color: var(--primary-950) !important; }
+} 
